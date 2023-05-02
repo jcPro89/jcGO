@@ -1,0 +1,10 @@
+* When a force was applied to the player so it could advance through the "floor", it would rotate because of the friction. The object rotation can be blocked by adding a Constraint in the component's Inspector panel, but this would disable the rotation generated when colliding. That's why a physics material with no friction (Slippery) was applied to the "floor".
+
+Different ways to associate the camera with the player 
+	1- Make the camera to be the player's child in the Hierarchy panel. This has the downside of "anchoring" to the player, which will make the camera to rotate when the player does, for example.
+	
+	2- Following the player's position through a script. This is, using the player for setting the camera's relative position. 
+	
+* Cuando creamos variables de un tipo del Inspector (ej.; Transform, RigidBody), luego arrastramos el GameObject a dicho objeto en la UI del Inspector
+
+* Una variable de tipo Vector3 almacena 3 float (para ejes X, Y y Z respectivamente)
