@@ -19,12 +19,12 @@ public class RunnerMovement : MonoBehaviour {
 
 		if(Input.GetKey("d"))
 		{
-			RunnerRigidbody.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+			RunnerRigidbody.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 		}
 
 		if(Input.GetKey("a"))
 		{
-			RunnerRigidbody.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+			RunnerRigidbody.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 		}
 	}
 }

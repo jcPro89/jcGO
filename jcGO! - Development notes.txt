@@ -8,3 +8,4 @@ Different ways to associate the camera with the player
 * Cuando creamos variables de un tipo del Inspector (ej.; Transform, RigidBody), luego arrastramos el GameObject a dicho objeto en la UI del Inspector
 
 * Una variable de tipo Vector3 almacena 3 float (para ejes X, Y y Z respectivamente)
+* El parámetro ForceMode del método AddForce() permite indicar cómo debe aplicarse la fuerza especificada
