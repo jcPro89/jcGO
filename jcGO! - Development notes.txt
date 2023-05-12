@@ -5,7 +5,12 @@ Different ways to associate the camera with the player
 	
 	2- Following the player's position through a script. This is, using the player for setting the camera's relative position. 
 	
-* Cuando creamos variables de un tipo del Inspector (ej.; Transform, RigidBody), luego arrastramos el GameObject a dicho objeto en la UI del Inspector
+* Cuando creamos variables de un tipo del Inspector (ej.; Transform, RigidBody), luego arrastramos el GameObject a dicho objeto en la UI del Inspector para relacionarlo
 
 * Una variable de tipo Vector3 almacena 3 float (para ejes X, Y y Z respectivamente)
+* void OnCollisionEnter(): evento cuando el GameObject correspondiente al script colisiona con otro objeto
+	** Puede recibir un objeto Collision que proveerá detalles sobre dicha colisión, como el nombre del objeto con el que colisionó (.collider.name)
+* Para categorizar un tipo de objeto (ejemplo, Obstáculo) se pueden usar Tags (dropdown arriba en el Inspector)	
 * El parámetro ForceMode del método AddForce() permite indicar cómo debe aplicarse la fuerza especificada
+* Se puede deshabilitar la ejecución de un script desde otro script. Ejemplo, se puede crear un objeto de tipo <nombreScript> y arrastrar ese script al objeto que aparecerá en el Inspector dentro del script que hace referencia a él.
+	** En el código, quedará algo como movement.enabled = false;
