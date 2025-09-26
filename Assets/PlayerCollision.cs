@@ -6,11 +6,9 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision detected with: " + collision.gameObject.name);
-
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("Player has collided with an obstacle!");
+            Debug.Log("Player has collided with an obstacle! Collision detected with: \" + collision.gameObject.name");
             PlayerMovement.enabled = false;
         }
     }
