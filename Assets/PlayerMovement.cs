@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         dummyRb.AddForce(0, 0, forwardForce * Time.deltaTime);
+
         if (Input.GetKey(KeyCode.D))
         {
             dummyRb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); // VelocityChange ignores mass and makes the movement more responsive
