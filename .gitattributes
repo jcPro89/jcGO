@@ -1,2 +1,21 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalizar finales de línea
+* text=auto eol=lf
+
+# Forzar binarios a no tener conversión de EOL
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.ttf binary
+*.fbx binary
+*.anim binary
+*.unity binary
+*.prefab binary
+*.asset binary
+*.dll binary
+*.exe binary
+*.zip binary
+*.unitypackage binary

@@ -7,12 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 10f;
 
-    void Start()
-    {
-
-    }
-
-    // FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
+    // FixedUpdate is used for physics updates
     void FixedUpdate()
     {
         dummyRb.AddForce(0, 0, forwardForce * Time.deltaTime);

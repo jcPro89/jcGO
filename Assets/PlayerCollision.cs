@@ -9,9 +9,9 @@ public class PlayerCollision : MonoBehaviour
         Debug.Log("Collision detected with: " + collision.gameObject.name);
 
         if (collision.gameObject.CompareTag("Obstacle"))
-       {
-           Debug.Log("Player has collided with an obstacle!");
-              PlayerMovement.enabled = false;
+        {
+            Debug.Log("Player has collided with an obstacle!");
+            PlayerMovement.enabled = false;
         }
     }
 }
